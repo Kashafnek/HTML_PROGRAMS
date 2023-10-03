@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    display: flex;
+    height: 300px;
+}
+
+.accordion{
+    width:40%;
+    height: 80vh;
+    padding:8px;
+    margin-top:5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.accordion__item{
+    flex-basis: 10%;
+    height: 100%;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: rgb(1, 1, 85);
+    cursor: pointer;
+    transition: 
+    flex-grow .3s linear
+    bacground-color .2s ease
+    }
+
+.accordion__item:hover{
+    background-color: rgb(3, 3, 55);
+    flex-grow: 3;
+}    
+
+.accordion__item:active{
+    box-shadow: 1px 1px 1em lightblue;
+    background-color:aliceblue;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="accordion"></div>
+    <div class="accordion__item">1</div>
+    <div class="accordion__item">2</div>
+    <div class="accordion__item">3</div>
+    <div class="accordion__item">4</div>
+</body>
+</html>

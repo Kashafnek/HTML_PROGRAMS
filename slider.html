@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  gap:20px;
+}
+.box{
+  width:10%;
+  height:80%;
+  border:1px solid gray;
+  border-radius:50px;
+  overflow:hidden;
+  transition:all 0.5s ease-in-out;
+}
+.box:nth-child(1)
+{
+  width:45%;
+}
+.box img{
+  height:100%;
+  min-width:400px;
+  width:100%;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt=""></div>
+      <div class="box">
+        <img src="https://images.unsplash.com/photo-1540550412100-d0ff9593eac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80" alt=""></div>
+      <div class="box">
+        <img src="https://images.unsplash.com/photo-1569865119711-3648822f82e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt=""></div>
+      <div class="box">
+        <img src="https://images.unsplash.com/photo-1449673029231-c71b7b47cf5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt=""></div>
+      <div class="box">
+        <img src="https://images.unsplash.com/photo-1506372191271-f4f1587b9eee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+     </div>
+     <script>
+        let box = document.querySelectorAll(".box");
+
+for(let i=0;i<box.length;i++)
+  {
+    box[i].onclick = function()
+    {
+      width();
+      box[i].style.width = "45%";
+    }
+  }
+function width()
+{
+  for(let j=0;j<box.length;j++)
+    {
+      box[j].style.width = "10%";
+    }
+}
+     </script>
+</body>
+</html>

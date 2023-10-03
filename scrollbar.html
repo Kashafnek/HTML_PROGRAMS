@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .longEnough {
+  max-height: 220px;
+  width: 350px;
+  overflow: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="longEnough mCustomScrollbar" data-mcs-theme="dark">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima repudiandae impedit quasi at cum tempore, dolorem repellendus similique quos quam accusamus itaque accusantium blanditiis sequi consectetur! Ullam tempore similique consequatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum unde officiis repellat aperiam ducimus quos harum dignissimos impedit aliquid sunt? Quisquam maxime debitis voluptatum eos itaque quis veniam officia nam?</p>
+      </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+
+</script>      
+</body>
+</html>
